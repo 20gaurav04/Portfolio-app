@@ -37,43 +37,42 @@
 }
 
 .logo1 {
-   background-image: url("C:\\Users\\gaura\\Desktop\\portfolio-app\\src\\asset\\linkedin.svg");
+   background-image: var(--linkedin-svg);
 }
 
 .logo1:hover {
    transform: rotateZ(360deg);
-   background-image: url("C:\\Users\\gaura\\Desktop\\portfolio-app\\src\\asset\\linkedin.png");
+   background-image: var(--linkedin-png);
 }
 
 .logo2 {
-   background-image: url("C:\\Users\\gaura\\Desktop\\portfolio-app\\src\\asset\\github.svg");
+   background-image: var(--github-svg);
 }
 
 .logo2:hover {
    transform: rotateZ(360deg);
-   background-image: url("C:\\Users\\gaura\\Desktop\\portfolio-app\\src\\asset\\git.png");
+   background-image: var(--git-png);
 }
 
 .logo3 {
-   background-image: url("C:\\Users\\gaura\\Desktop\\portfolio-app\\src\\asset\\ig.svg");
+   background-image: var(--ig-svg);
 }
 
 .logo3:hover {
    transform: rotateZ(360deg);
-   background-image: url("C:\\Users\\gaura\\Desktop\\portfolio-app\\src\\asset\\ig.png");
+   background-image: var(--ig-png);
 }
 
 .logo4 {
-   background-image: url("C:\\Users\\gaura\\Desktop\\portfolio-app\\src\\asset\\yt.svg");
+   background-image: var(--yt-svg);
 }
 
 .logo4:hover {
    transform: rotateZ(360deg);
-   background-image: url("C:\\Users\\gaura\\Desktop\\portfolio-app\\src\\asset\\yt.png");
+   background-image: var(--yt-png);
 }
 
 .form-container {
-   background-image: url("C:\\Users\\gaura\\Desktop\\portfolio-app\\public\\back1.jpg");
    background-blend-mode: screen;
    border-radius: 1%;
    padding: 1rem;
