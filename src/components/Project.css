@@ -1,0 +1,163 @@
+.Project {
+    min-height: calc(100vh - 5rem);
+    position: relative;
+    overflow: hidden;
+    width: 100vw;
+    max-width: 100rem;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    margin: 0 -1rem;
+    color: white;
+    margin-bottom: 5rem;
+ }
+
+.container1 {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 1rem; /* Add gap between grid items */
+    padding: 1rem;
+    padding-left: 2rem;
+    width: 100%;
+    max-width: 28rem;
+    height: 28rem;
+    background-color: rgba(0, 0, 0, 0.756);
+}
+
+.Projects {
+    background-color: rgb(47, 47, 47);
+    border-radius: 2%;
+    background-size: 15rem;
+    width: 100%;
+    max-width: 12rem;
+    height: 12rem;
+    transform: scale(1);
+    transition: background 0.5s, transform 0.5s ease-in-out; /* Combined transition for smoother hover effect */
+}
+
+.title {
+    margin: 1rem;
+    text-align: left;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: clamp(1rem, 2.5vw, 1.5rem); /* Responsive title size */
+}
+
+p {
+    color: rgb(200, 200, 200);
+    margin: 10px;
+    text-align: justify;
+    font-family: 'Arial Narrow';
+    font-size: clamp(0.9rem, 2vw, 1rem); /* Responsive paragraph size */
+}
+
+.builds {
+    margin-left: 1rem;
+    width: 1.5rem;
+    height: 1.5rem;
+}
+
+.Projects:hover {
+    background: linear-gradient(rgb(197, 0, 134), blue);
+    transform: scale(1.1);
+}
+
+.container1 .Projects:not(:hover) {
+    transform: scale(0.9);
+    transition: transform 0.3s ease;
+}
+
+#head {
+    margin-left: 2.5rem;
+    font-size: clamp(1.5rem, 3vw, 2rem); /* Responsive heading size */
+}
+@media (max-width: 1080px) {
+    .container1 {
+        max-width: 90%; /* Increase the container width */
+        height: auto; /* Adjust height to content */
+        padding-left: 1rem; /* Adjust padding */
+    }
+
+    .Projects {
+        margin-left: 2rem;
+        max-width: 18rem; /* Slightly reduce project size */
+        height: 10rem;
+    }
+
+    #head {
+        margin-left: 1.5rem; /* Adjust margin */
+        font-size: 3rem;
+    }
+
+    .title {
+        font-size: 1.5rem; /* Reduce font size */
+    }
+
+    p {
+        font-size: 0.9rem; /* Reduce paragraph font size */
+    }
+}
+
+
+@media (max-width: 768px) {
+    .container1 {
+        grid-template-columns: 1fr; /* Change layout to single column */
+        max-width: 90%; /* Increase the container width */
+        height: auto; /* Adjust height to content */
+        padding-left: 1rem; /* Adjust padding */
+    }
+
+    .Projects {
+        margin-left: 2rem;
+        max-width: 18rem; /* Slightly reduce project size */
+        height: 10rem;
+    }
+
+    #head {
+        margin-left: 1.5rem; /* Adjust margin */
+        font-size: 3rem;
+    }
+
+    .title {
+        font-size: 1.5rem; /* Reduce font size */
+    }
+
+    p {
+        font-size: 0.9rem; /* Reduce paragraph font size */
+    }
+}
+
+/* Media query for mobile phones */
+@media (max-width: 480px) {
+    .container1 {
+        grid-template-columns: 1fr; /* Single column layout */
+        max-width: 100%; /* Use full width */
+        padding: 0.5rem; /* Reduce padding */
+    }
+
+    .Projects {
+        max-width: 20rem;
+        margin-left: 2.5rem; /* Further reduce project size */
+        height: 10rem;
+    }
+
+    .title {
+        font-size: 1.2rem; /* Further reduce font size */
+    }
+
+    p {
+        font-size: 0.8rem; /* Further reduce paragraph font size */
+    }
+
+    #head {
+        margin-left:3rem;
+        font-size: 3rem;
+        text-shadow:0px 2px rgb(17, 0, 255);
+    }
+
+    .builds {
+        width: 1rem; /* Reduce build icon size */
+        height: 1rem;
+    }
+}

@@ -1,0 +1,180 @@
+@import url('https://fonts.googleapis.com/css2?family=Anybody:ital,wght@0,100..900;1,100..900&family=Bebas+Neue&family=Kalam:wght@300;400;700&family=Playwrite+CU:wght@100..400&display=swap');
+
+@font-face {
+    font-family: 'Inversionz';
+    src: url('C:/Users/gaura/Desktop/portfolio-app/src/asset/Inversionz.otf') format('opentype');
+    font-weight: normal;
+    font-style: normal;
+}    
+
+@font-face {
+    font-family: 'Inversionz Unboxed';
+    src: url('C:/Users/gaura/Desktop/portfolio-app/src/asset/Inversionz Unboxed.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+
+.section {
+    color: white;
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    height: calc(100vh - 5rem); /* Fixed the height calculation syntax */
+    margin: 4rem auto;
+    max-width: 100rem;
+    border-radius: 2rem;
+}
+
+.intro {
+    margin-top: 5rem;
+    max-width: 35rem;
+    margin-left: 4rem;
+    font-size: 5rem;
+}
+
+.subIntro {
+    font-family: 'Inversionz';
+    color: white;
+    text-shadow: 2px 2px rgb(20, 47, 220);
+    margin-top: 1rem;
+    margin-left: 4rem;
+    font-size: 2rem;
+}
+
+.name {
+    margin-right: 1rem;
+    color: white;
+    text-shadow: none;
+    font-size: 1.8rem;
+}
+
+.hireMe {
+    font-family: 'Bebas Neue';
+    letter-spacing: 2px;
+    margin-top: 2rem;
+    margin-left: 4rem;
+    color: white;
+    background: linear-gradient(to left, blue, rgb(238, 0, 255));
+    border: none;
+    /* box-shadow: 0px 0.2px 5px rgb(255, 255, 255); */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 1rem;
+    font-size: 1.2rem;
+    max-width: 8rem;
+    border-radius: 0.5rem;
+    padding: 0.2rem;
+}
+
+.sleek {
+    background-image: linear-gradient(to right, rgb(255, 0, 217), blue);
+    -webkit-background-clip: text;
+    color: transparent;
+}
+
+.hireMe:hover {
+    transition-duration: 0.3s;
+    background: linear-gradient(white, white);
+    color: black;    
+    transition-timing-function: ease-in;
+    box-shadow: 0px 0.4px 10px rgb(255, 255, 255);
+}
+
+.hireMeImg {
+    width: 1.2rem;
+}
+
+.reactLogo {
+    position: absolute;
+    max-width: 50rem;
+    height: 25rem;
+    margin-left: 50rem;
+    margin-top: 4rem;
+    z-index: -1;
+    animation: logo infinite 15s linear;
+}
+
+@keyframes logo {
+    from {
+        transform: rotate(0deg);
+    }
+    to {
+        transform: rotate(360deg);
+    }
+}
+
+/* Media query for screens with a max-width of 1080px */
+@media screen and (max-width: 1080px) {
+    .intro {
+        font-size: 4rem;
+        max-width: 30rem;
+    }
+    
+    .subIntro {
+        max-width: 25rem;
+        font-size: 2rem;
+    }
+
+    .reactLogo {
+        opacity: 0.8;
+        right: 15vw;
+        height: 20rem;
+        margin-top: 7rem;
+    }
+
+    .hireMe {
+        margin-top: 5rem;
+        margin-left: 6rem;
+    }
+}
+
+/* Media query for screens with a max-width of 768px */
+@media screen and (max-width: 768px) {
+    .intro {
+        margin-left: 2rem;
+        font-size: 3.5rem;
+        max-width: 25rem;
+    }
+
+    .subIntro {
+        margin-left: 2rem;
+        max-width: 24rem;
+        font-size: 1.5  rem;
+    }
+
+    .reactLogo {
+        opacity: 0.7;
+        right: 12vw;
+        height: 18rem; /* Use 'rem' consistently */
+        margin-top: 7rem;
+    }
+}
+
+/* Media query for screens with a max-width of 500px */
+@media screen and (max-width: 500px) {
+    .intro {
+        margin-top: 12rem;
+        text-align: center;
+        right:10vw;
+        font-size: 3rem; 
+        max-width: 20rem;
+    }
+
+    .subIntro {
+        display: none;
+    }
+
+    .hireMe {
+        margin-top: 6rem;
+        height: 3rem;
+        margin-left: 8rem;
+    }
+
+    .reactLogo {
+        opacity: 0.5;
+        right: 15vw;
+        height: 17rem; 
+        margin-top: 7rem;
+    }
+}
