@@ -138,7 +138,7 @@ p {
 
     .Projects {
         max-width: 20rem;
-        margin-left: 2.5rem; /* Further reduce project size */
+        margin-left: 2rem; /* Further reduce project size */
         height: 10rem;
     }
 
