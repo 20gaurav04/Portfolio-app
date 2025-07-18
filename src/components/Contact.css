@@ -2,30 +2,26 @@
    min-height: calc(100vh - 4rem);
    display: flex;
    flex-direction: column;
-   position: relative;
-   overflow: hidden;
-   width: 100vw;
-   max-width: 100rem;
-   flex-wrap: wrap;
    align-items: center;
    justify-content: center;
    text-align: center;
    color: white;
-   padding: 2rem; /* Add padding for better spacing */
+   padding: 2rem;
+   width: 100%;
+   max-width: 100rem;
+   margin: 0 auto;
+   overflow: hidden;
 }
-
-/* Media query for tablets */
-
 
 .socials {
    width: 100%;
+   max-width: 50rem;
    display: flex;
    align-items: center;
    justify-content: space-around;
-   overflow: hidden;
    padding: 1rem;
-   max-width: 50rem;
    height: 20rem;
+   margin: 0 auto;
 }
 
 .sociallogo {
@@ -33,80 +29,53 @@
    height: 8rem;
    background-size: contain;
    background-repeat: no-repeat;
-   transition: transform 0.7s ease-in-out; /* Smooth transition */
+   transition: transform 0.7s ease-in-out;
 }
 
-.logo1 {
-   background-image: var(--linkedin-svg);
-}
+.logo1 { background-image: var(--linkedin-svg); }
+.logo1:hover { transform: rotateZ(360deg); background-image: var(--linkedin-png); }
 
-.logo1:hover {
-   transform: rotateZ(360deg);
-   background-image: var(--linkedin-png);
-}
+.logo2 { background-image: var(--github-svg); }
+.logo2:hover { transform: rotateZ(360deg); background-image: var(--git-png); }
 
-.logo2 {
-   background-image: var(--github-svg);
-}
+.logo3 { background-image: var(--ig-svg); }
+.logo3:hover { transform: rotateZ(360deg); background-image: var(--ig-png); }
 
-.logo2:hover {
-   transform: rotateZ(360deg);
-   background-image: var(--git-png);
-}
-
-.logo3 {
-   background-image: var(--ig-svg);
-}
-
-.logo3:hover {
-   transform: rotateZ(360deg);
-   background-image: var(--ig-png);
-}
-
-.logo4 {
-   background-image: var(--yt-svg);
-}
-
-.logo4:hover {
-   transform: rotateZ(360deg);
-   background-image: var(--yt-png);
-}
+.logo4 { background-image: var(--yt-svg); }
+.logo4:hover { transform: rotateZ(360deg); background-image: var(--yt-png); }
 
 .form-container {
    background-blend-mode: screen;
    border-radius: 1%;
    padding: 1rem;
-   width: 100vw;
+   width: 100%;
    max-width: 90rem;
    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
    display: flex;
-   margin-top: 10rem;
-   margin-bottom: 10rem;
    flex-direction: column;
    align-items: center;
-   position: relative;
-   
+   margin: 10rem auto;
 }
 
 .header {
-   text-shadow:0px 2px rgb(17, 0, 255);
-   font-size: clamp(3rem, 4vw, 2.5rem); /* Responsive font size */
+   text-shadow: 0px 2px rgb(17, 0, 255);
+   font-size: clamp(3rem, 4vw, 2.5rem);
    color: #fff;
-   margin-top: 2rem;
-   margin-bottom: 4rem;
-   margin-left: 1rem;
+   margin: 2rem auto 4rem;
+   text-align: center;
 }
 
 .form-group {
    margin-bottom: 15px;
    width: 100%;
-   
+   display: flex;
+   flex-direction: column;
+   align-items: center;
 }
 
 .label {
    display: block;
    color: #fff;
-   
    margin-bottom: 5px;
    font-size: 1.5rem;
 }
@@ -114,172 +83,82 @@
 .input,
 .textarea {
    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
-   width: 100vw;
-      background: rgb(77, 77, 77);
-      color:white;
+   width: 100%;
    max-width: 50rem;
    height: 8rem;
    padding: 10px;
-   border-radius: 5px;
-
+   background: rgb(77, 77, 77);
+   color: white;
    border: none;
+   border-radius: 5px;
    box-sizing: border-box;
    font-weight: 500;
    font-size: clamp(1rem, 2.5vw, 1.2rem);
 }
 
-.input {
-   height: 2.5rem;
-}
+.input { height: 2.5rem; }
 
 .send-button {
    font-family: 'Bebas Neue';
    width: 100%;
    max-width: 10rem;
+   height: 2.5rem;
    background: #fff;
    color: black;
-   height: 2.5rem;
    border: none;
    border-radius: 5px;
    padding: 0.4rem;
    cursor: pointer;
-   margin-bottom: 5rem;
+   margin: 2rem auto 5rem;
    font-size: clamp(1.2rem, 2.5vw, 1.5rem);
    transition: background 0.5s ease-in-out, transform 0.5s ease-in-out;
 }
 
 .send-button:hover {
    background: rgb(115, 0, 247);
-   color:#fff;
+   color: #fff;
    transform: scale(1.05);
 }
-@media (max-width: 1080px) {
+
+/* Media Queries - Maintain Center Alignment */
+@media (max-width: 1080px),
+       (max-width: 768px),
+       (max-width: 480px) {
    .Contact {
-      padding: 2rem;
+      padding: 1rem;
    }
 
    .socials {
       flex-direction: column;
       height: auto;
-      gap: 0.5rem;
+      gap: 1rem;
+      padding: 1rem;
    }
 
    .sociallogo {
       width: 6rem;
       height: 6rem;
-      background-size: contain;
-      background-repeat: no-repeat;
    }
 
    .form-container {
-      margin-top: 5rem;
-      margin-bottom: 5rem;
+      margin: 5rem auto;
       padding: 1rem;
-      max-width: 80%;
+      max-width: 90%;
    }
 
    .header {
-      font-size: 3rem;
-      margin-top: 1.5rem;
-      margin-bottom: 3rem;
+      font-size: 2.5rem;
+      margin: 1.5rem auto 3rem;
    }
 
    .input,
    .textarea {
-      max-width: 35rem;
+      max-width: 100%;
       font-size: 1rem;
    }
 
    .send-button {
       max-width: 8rem;
-      font-size: 1.2rem;
-   }
-}
-
-@media (max-width: 768px) {
-   .Contact {
-      padding: 2rem;
-   }
-
-   .socials {
-      flex-direction: column;
-      height: auto;
-      gap: 0.5rem;
-   }
-
-   .sociallogo {
-      width: 6rem;
-      height: 6rem;
-      background-size: contain;
-      background-repeat: no-repeat;
-   }
-
-   .form-container {
-      margin-top: 5rem;
-      margin-bottom: 5rem;
-      padding: 1rem;
-      max-width: 80%;
-   }
-
-   .header {
-      font-size: 2rem;
-      margin-top: 1.5rem;
-      margin-bottom: 3rem;
-   }
-
-   .input,
-   .textarea {
-      max-width: 30rem;
-      font-size: 1rem;
-   }
-
-   .send-button {
-      max-width: 8rem;
-      font-size: 1.2rem;
-   }
-}
-
-@media (max-width: 480px) {
-   .Contact {
-      padding: 1rem;
-   }
-
-   .socials {
-
-      flex-direction: column;
-      height: auto;
-      padding: 0.5rem;
-   }
-
-   .sociallogo {
-      width: 5rem;
-      height: 5rem;
-      background-size: contain;
-      background-repeat: no-repeat;
-   }
-
-   .form-container {
-      margin-top: 2rem;
-      margin-bottom: 2rem;
-      padding: 1rem;
-      max-width: 95%;
-   }
-
-   .header {
-
-      font-size: 3rem;
-      margin-top: 1rem;
-      margin-bottom: 2rem;
-   }
-
-   .input,
-   .textarea {
-      max-width:20rem;
-      font-size: 0.9rem;
-   }
-
-   .send-button {
-      max-width: 7rem;
-      font-size: 1rem;
+      font-size: 1.1rem;
    }
 }

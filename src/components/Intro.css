@@ -1,7 +1,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Anybody:ital,wght@0,100..900;1,100..900&family=Bebas+Neue&family=Kalam:wght@300;400;700&family=Playwrite+CU:wght@100..400&display=swap');
 
 @font-face {
-    font-family: 'Inversionz' , 'sans';
+    font-family: 'Inversionz';
     src: url('../asset/Inversionz.otf') format('opentype'); /* Adjusted to relative path */
     font-weight: normal;
     font-style: normal;
@@ -9,7 +9,7 @@
 
 @font-face {
     font-family: 'Inversionz Unboxed';
-    src: url('../asset/Inversionz Unboxed.ttf') format('truetype'); /* Adjusted to relative path */
+    src: url('../asset/Inversionz Unboxed.otf') format('truetype'); /* Adjusted to relative path */
     font-weight: normal;
     font-style: normal;
 }
@@ -32,7 +32,7 @@
 }
 
 .subIntro {
-    font-family: 'Proxima';
+    font-family: 'Inversionz Unboxed';
     color: white;
     text-shadow: 2px 2px rgb(20, 47, 220);
     margin-top: 1rem;
@@ -54,7 +54,8 @@
     margin-top: 2rem;
     margin-left: 4rem;
     color: white;
-    background: linear-gradient(to left, blue, rgb(238, 0, 255));
+    background: linear-gradient(to right, #7f7fff, #b3cfff)  ;/* soft blue gradient */
+
     border: none;
     display: flex;
     justify-content: center;
@@ -67,7 +68,7 @@
 }
 
 .sleek {
-    background-image: linear-gradient(to right, rgb(255, 0, 217), blue);
+    background-image: linear-gradient(to right, #7f7fff, #b3cfff) ; /* soft blue gradient */
     -webkit-background-clip: text;
     color: transparent;
 }

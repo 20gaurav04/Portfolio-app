@@ -17,7 +17,7 @@ function Navbar() {
         <Link activeClass="active" to='nav' spy ={true} smooth = {true} offset={-50} duration={500} className="nav-links-item">Home</Link> 
         <Link activeClass="active" to='abouts' spy ={true} smooth = {true} offset={-100} duration={500} className="nav-links-item">About</Link>
         <Link activeClass="active" to='Project' spy ={true} smooth = {true} offset={-50} duration={500} className="nav-links-item">Projects</Link>
-        <Link activeClass="active" to='contact' spy ={true} smooth = {true} offset={-50} duration={500} className="nav-links-item">Socials</Link>
+        <Link activeClass="active" to='socials' spy ={true} smooth = {true} offset={-50} duration={500} className="nav-links-item">Socials</Link>
     </div>
     <button class = "btn" onClick={()=> {document.getElementById('reach').scrollIntoView({behavior:'smooth'})}}><img src={Contact} alt='Contact Me' className='btn-Image'/>Reach Me</button>
 
