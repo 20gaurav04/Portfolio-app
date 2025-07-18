@@ -27,7 +27,7 @@ function Project() {
       <img src= {pythonlogo}alt="#" className="builds"></img>
       <img src= {csslogo}alt="#" className="builds"></img>
       <img src= {htmllogo}alt="#" className="builds"></img></div>
-      <div className='Projects'><h4 className='title'>Quizzie</h4><hr></hr><p>A quiz app built with Node,React featuring interactive quizzes, and real-time scoring.</p>
+      <div className='Projects'><h4 className='title'>TravelSavvy</h4><hr></hr><p>A travel plannar site built with React featuring HORECA details and cost with AI support.</p>
       <img src= {reactlogo}alt="#" className="builds"></img>
       <img src= {nodelogo}alt="#" className="builds"></img>
       <img src= {taillogo}alt="#" className="builds"></img></div>

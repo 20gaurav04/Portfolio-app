@@ -12,7 +12,7 @@ function Intro() {
 
   const handleResumeClick = () => {
 
-    window.open('https://docs.google.com/document/d/12vtqqdOZq51N_y9Nsp7TLctcUliZDHG9/edit?usp=drive_link&ouid=115979587760637855097&rtpof=true&sd=true', '_blank'); 
+    window.open('https://drive.google.com/file/d/1p96dnSHB8eKRCb3TgZzqTHRrnTuqimcs/view?usp=drive_link', '_blank'); 
   };
 
   return (

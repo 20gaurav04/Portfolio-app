@@ -21,32 +21,32 @@ function About() {
 
         <div className = "container delay1">
         <div class="text-content">
-          <h2>July,2024</h2>
-          <p>Joined Learn&Build as an Intern</p>
+          <h2>May,2025</h2>
+          <p>Joined Celebal Technologies as a React Intern</p>
         </div>
       </div>
       <div className = "container">
         <div class="text-content">
+          <h2>July-Sept,2024</h2>
+          <p>Completed Internship at Learn and Build</p>
+        </div>
+      </div>
+      <div className = "container" >
+        <div class="text-content">
           <h2>October,2023</h2>
-          <p>Qualified for Smart India Hackathon 2023 round 2</p>
+          <p>Qualifed for Smart India Hackathon</p>
         </div>
       </div>
       <div className = "container" >
         <div class="text-content">
           <h2>August,2023</h2>
-          <p>Completed  an internship at Zeetron Networks Pvt Ltd.</p>
+          <p>Completed  an internship at Zeetron Networks Pvt Ltd. as an Python Trainee</p>
         </div>
       </div>
       <div className = "container" >
         <div class="text-content">
           <h2>November,2022</h2>
           <p>Started B.Tech in Computer Science from Poornima College Of Engineering</p>
-        </div>
-      </div>
-      <div className = "container" >
-        <div class="text-content">
-          <h2>June,2022</h2>
-          <p>Completed High School from Subodh Public School</p>
         </div>
       </div>
 
